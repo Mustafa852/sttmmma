@@ -1,5 +1,6 @@
 dependencies:
   akaneko: 5.2.3
+  aki-api: 6.0.8
   axios: 0.21.4
   better-uptime: 1.1.4
   canvacord: 5.4.6
@@ -801,6 +802,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-l8uRYnR381RbwMQbNyYhX2LLAiFQZli0tqxWLEiWK46spptPjIJPmg8mjs9IOYCGyLXGRHkO1R5siIggpz10vA==
+  /aki-api/6.0.8:
+    dependencies:
+      axios: 0.21.4
+      https-proxy-agent: 5.0.1
+    dev: false
+    resolution:
+      integrity: sha512-fOMHSPfcyT2WFrf2wsQf5GNpwCSJzWA7+YO3DU8j8wOS16I10lmpIxXkdx3rCiWfmhD6kXVdUaEGJ4DKkiPbMA==
   /ansi-escapes/3.2.0:
     dev: false
     engines:
@@ -6320,6 +6328,7 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   akaneko: ^5.2.3
+  aki-api: ^6.0.8
   axios: ^0.21.1
   better-uptime: ^1.1.4
   canvacord: ^5.0.8
