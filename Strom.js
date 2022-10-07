@@ -26,10 +26,6 @@ const queue = new Map();
 const YouTube = require("simple-youtube-api");
 const ytdl = require("ytdl-core");
 
-setInterval(async () => {
-  await fetch('https://cooperative-spiffy-dead.glitch.me','https://glitch.com/edit/#!/cooperative-spiffy-dead').then(console.log('Uptimed!'))
-}, 20000)
-
 let prefix = ayarlar.prefix;
 
 client.ekoayarlar = {
