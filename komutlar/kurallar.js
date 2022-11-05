@@ -10,22 +10,37 @@ dbl.hasVoted(message.author.id).then(voted => {
     .setColor('RED')
       .addField(`Kurallar`, [`
       
-      - Küfür, argo ve reklam kesinlikle **yasaktır**!
-      - Spam ve flood **yasaktır**!
-      - Din, ırk ve siyaset konuşmak **yasaktır**!
-      - Herkes birbirine saygılı olmalıdır!
-      - Herkesin görüşü kendinedir bu yüzden tartışmak **yasaktır**!
-      - Üstünlük göstermek/taslamak **yasaktır**!
-      - Caps ve emoji kullanımı **yasaktır**! (Aşırı Olmadıkça)
-      - Oynuyor kısmına reklam, küfür koymak **yasaktır**!
-      - Yetkililere karşı gelmek **yasaktır**!
-      - Bot basmak/j4j yapmak **yasaktır**!
-      - Rahatsızlık vermek **yasaktır**!
-      - 8Yetkililere Argo Kelime Kullanmak Ve Emir Verici Sözler Söylemek **yasaktır**.
-      - Ses Kanallarında İnsanlara Küfür Etmek,Trollemek Ve Rahatsız Etmek **yasaktır**.
-      - +18 İsim Ve Profil Fotoğrafı Ve Gif Koymak **yasaktır**.\n\n
-      - Herkes kuralları okumuş ve kabul etmiş sayılır! , ben bilmiyordum vb geçmez! 
+» Kurallar
 
+» Her sunucunun kuralları vardır bu sunucununda bir kuralları vardır!
+
+1) Aşırıya kaçmadıkça küfür serbesttir.
+
+2) Her Türlü Reklam Fark Etmeksizin **yasaktır**.
+
+3) Irkçılık , din , siyaset... **yasaktır**.
+
+4) Spam,flood yapmak yasaktır.
+
+5) nafw ve nsfw tarzı herşey yasaktır.
+
+6) Rahatsız edici davranışlarda bulunma yasaktır.
+
+7) Kavga çıkarmak , tartışma oluşturmak yasaktır
+
+8) Her hangi bir şekilde kişi dolandırmak yasaktır
+
+9) Yetkililere Argo Kelime Kullanmak Ve Emir Verici Sözler Söylemek Yasaktır.
+
+10) Ses Kanallarında İnsanlara Küfür Etmek,Trollemek Ve Rahatsız Etmek Yasaktır.
+
+11) +18 Cinsel içerik, kan, vahşet, jump scare içeren fotoğraf,video paylaşımı yasaktır.
+
+12) Yetkililerin kendinden düşük rütbe olan kişilere patronluk taslaması yasaktır.
+
+Herkes kuralları okumuş ve kabul etmiş sayılır! , ben bilmiyordum vb.. geçmez!
+
+||@everyone|| & ||@here||
       `])
 
        message.delete();
