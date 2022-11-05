@@ -1,3 +1,4 @@
+
 exports.run = (client, message) => {
   let db = require("quick.db");
   let Discord = require("discord.js");
