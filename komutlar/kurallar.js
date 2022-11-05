@@ -7,7 +7,7 @@ dbl.hasVoted(message.author.id).then(voted => {
       if(voted) {
     const rules = new Discord.MessageEmbed()
     
-    .setColor('RED')
+    .setColor('RANDOM')
       .addField(`Kurallar`, [`
       
 » Kurallar
@@ -20,28 +20,26 @@ dbl.hasVoted(message.author.id).then(voted => {
 
 3) Irkçılık , din , siyaset... **yasaktır**.
 
-4) Spam,flood yapmak yasaktır.
+4) Spam,flood yapmak **yasaktır**.
 
-5) nafw ve nsfw tarzı herşey yasaktır.
+5) nafw ve nsfw tarzı herşey **yasaktır**.
 
-6) Rahatsız edici davranışlarda bulunma yasaktır.
+6) Rahatsız edici davranışlarda bulunma **yasaktır**.
 
-7) Kavga çıkarmak , tartışma oluşturmak yasaktır
+7) Kavga çıkarmak , tartışma oluşturmak **yasaktır**
 
-8) Her hangi bir şekilde kişi dolandırmak yasaktır
+8) Her hangi bir şekilde kişi dolandırmak **yasaktır**
 
-9) Yetkililere Argo Kelime Kullanmak Ve Emir Verici Sözler Söylemek Yasaktır.
+9) Yetkililere Argo Kelime Kullanmak Ve Emir Verici Sözler Söylemek **yasaktır**.
 
-10) Ses Kanallarında İnsanlara Küfür Etmek,Trollemek Ve Rahatsız Etmek Yasaktır.
+10) Ses Kanallarında İnsanlara Küfür Etmek,Trollemek Ve Rahatsız Etmek **yasaktır**.
 
-11) +18 Cinsel içerik, kan, vahşet, jump scare içeren fotoğraf,video paylaşımı yasaktır.
+11) +18 Cinsel içerik, kan, vahşet, jump scare içeren fotoğraf,video paylaşımı **yasaktır**.
 
-12) Yetkililerin kendinden düşük rütbe olan kişilere patronluk taslaması yasaktır.
+12) Yetkililerin kendinden düşük rütbe olan kişilere patronluk taslaması **yasaktır**.
 
 Herkes kuralları okumuş ve kabul etmiş sayılır! , ben bilmiyordum vb.. geçmez!
-
-||@everyone|| & ||@here||
-      `])
+      `, '||@everyone|| & ||@here||']);
 
        message.delete();
       //message.react("?");

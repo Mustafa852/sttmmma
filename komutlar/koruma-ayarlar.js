@@ -95,11 +95,6 @@ exports.run = async (client, message) => {
       true
     )
   .addField(
-      `__ping__`,
-      `⚙️ \`${prefix}ping\` Botun geçikme süresine bakarsınız.`,
-      true
-    )
-  .addField(
       `__ban sistem__`,
       `⚙️ \`${prefix}ban-sistem\` Ban sistemi ayarlarsınız.`,
       true
