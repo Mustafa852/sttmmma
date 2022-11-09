@@ -56,7 +56,7 @@ exports.run = async (client, msg, args) => {
       "Aşkölçer %0 Gösteriyor.",
       "Aşkölçer %95 Gösteriyor.",
       "Aşkölçer %99 Gösteriyor.",
-      "Aşkölçer %100 Gösteriyor.",
+      "Aşkölçer %100 Gösteriyor.(Siz harbi olursunuz)",
     ]
 
 let xfalcon = msg.mentions.members.first()
