@@ -136,13 +136,13 @@ exports.run = async(bot, message, args) => {
 };
 
 exports.conf = {
-    aliases: ['nsfw'],
+    aliases: ['nsfw-sistem'],
     permLevel: 0,
     kategori: "Eğlence",
 };
 
 exports.help = {
-    name: 'NSFW',
+    name: 'NSFW-1',
     description: 'Sadece NSFW kanalına istediğiniz tür fotoğraf atar.',
     usage: 'nsfw <tür adı>',
 
