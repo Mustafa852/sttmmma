@@ -27,5 +27,5 @@ exports.conf = {
 }
 
 exports.help = {
-  name: 'thighs'
+  name: '123thighs'
 };

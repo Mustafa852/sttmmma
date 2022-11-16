@@ -27,5 +27,5 @@ exports.conf = {
 }
 
 exports.help = {
-  name: 'random'
+  name: '123random'
 };

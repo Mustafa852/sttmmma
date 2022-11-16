@@ -35,11 +35,11 @@ dbl.hasVoted(message.author.id).then(voted => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['pgif'],
+  aliases: ['123pgif'],
   permLevel: 0
 };
 exports.help = {
-  name: 'pgif',
+  name: '123pgif',
   category: "morno",
   description: 'İstediğiniz bir kişi ile düello atarsınız!',
   usage: 'pgif'

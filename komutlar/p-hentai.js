@@ -35,11 +35,11 @@ dbl.hasVoted(message.author.id).then(voted => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['hentai'],
+  aliases: ['123hentai'],
   permLevel: 0
 };
 exports.help = {
-  name: 'hentai',
+  name: '123hentai',
   category: "morno",
   description: 'İstediğiniz bir kişi ile düello atarsınız!',
   usage: 'hentai'

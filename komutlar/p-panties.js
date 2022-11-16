@@ -28,5 +28,5 @@ exports.conf = {
 }
 
 exports.help = {
-  name: 'panties'
+  name: '123panties'
 };

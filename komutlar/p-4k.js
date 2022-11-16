@@ -37,11 +37,11 @@ dbl.hasVoted(message.author.id).then(voted => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['4k'],
+  aliases: ['1234k'],
   permLevel: 0
 };
 exports.help = {
-  name: '4k',
+  name: '1234k',
   category: "morno",
   description: 'İstediğiniz bir kişi ile düello atarsınız!',
   usage: '4k'

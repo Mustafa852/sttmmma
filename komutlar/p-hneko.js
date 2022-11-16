@@ -35,11 +35,11 @@ dbl.hasVoted(message.author.id).then(voted => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['hneko'],
+  aliases: ['123hneko'],
   permLevel: 0
 };
 exports.help = {
-  name: 'hneko',
+  name: '123hneko',
   category: "morno",
   description: 'İstediğiniz bir kişi ile düello atarsınız!',
   usage: 'hneko'

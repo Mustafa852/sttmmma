@@ -36,12 +36,12 @@ dbl.hasVoted(message.author.id).then(voted => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["pussy"],
+  aliases: ["123pussy"],
   permLevel: 0
 };
 
 exports.help = {
-  name: "pussy",
+  name: "123pussy",
   description: "",
   usage: "pussy"
 };
