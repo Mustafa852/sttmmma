@@ -6,9 +6,10 @@ exports.run = async(bot, message, args) => {
 
     if (!answer) {
         const blank = new Discord.MessageEmbed()
-            .setColor('#0099ff')
-            .setTitle('Errrrk!')
+            .setColor('#RANDOM')
+            .setTitle('Strom!')
             .setDescription('Lütfen bir tür giriniz.')
+             .setDescription('__örnek__ **s!NSFW ass**')
             .addField('Türler:', 'ass\nbdsm\nblowjob\ncum\ndoujin\nfeet\nfemdom\nfoxgirl\ngifs\nglasses\nhentai\nnetorare\nmaid\nmasturbation\norgy\npanties\npussy\nschool\nsuccubus\ntentacles\nthighs\nuglyBastard\nuniform\nyuri\nzettaiRyouiki', true)
             .setTimestamp()
             .setFooter('Nsfw command.');
@@ -142,7 +143,7 @@ exports.conf = {
 };
 
 exports.help = {
-    name: 'NSFW-1',
+    name: 'NSFW',
     description: 'Sadece NSFW kanalına istediğiniz tür fotoğraf atar.',
     usage: 'nsfw <tür adı>',
 
