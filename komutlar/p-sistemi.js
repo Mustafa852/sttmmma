@@ -90,12 +90,12 @@ exports.run = async (client, message) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["nsfw-sistem"],
+  aliases: [],
   permLevel: 0
 };
 
 exports.help = {
-  name: "nsfw",
+  name: "NESEFEWE1",
   description: "Yardım Menüsü",
   usage: "nsfw"
 };

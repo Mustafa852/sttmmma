@@ -136,7 +136,7 @@ exports.run = async(bot, message, args) => {
 };
 
 exports.conf = {
-    aliases: ['Nsfw'],
+    aliases: ['nsfw'],
     permLevel: 0,
     kategori: "Eğlence",
 };
