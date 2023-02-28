@@ -25,7 +25,17 @@ const fetch = require('node-fetch')
 const queue = new Map();
 const YouTube = require("simple-youtube-api");
 const ytdl = require("ytdl-core");
-
+const bot = new Strom.Client({ disableEveryone: true });
+require("moment-duration-format");
+require("./komut.js")(bot);
+require("./yanıtlama");
+const newUsers = new Strom.Collection();
+bot.commands = new Strom.Collection();
+bot.aliases = new Strom.Collection();
+module.exports = {
+  bot: bot,
+  Discord: Strom
+};
 let prefix = ayarlar.prefix;
 
 client.ekoayarlar = {
@@ -366,53 +376,6 @@ botdurum.send(botistatistik);
 
 ///Bot i son
 
-
-
-
-
-
-////GİF İÇİM
-
-
-//------------------------ Eklendim Atıldım -----------------------//
-//------------------------ Eklendim Atıldım -----------------------//
-//------------------------ Eklendim Atıldım -----------------------//
-
-client.on('guildDelete', guild => {
-
-let rrrsembed = new Strom.MessageEmbed()
-
-.setColor("RED")
-.setTitle("Bot Kicklendi")
-.addField("Sunucu Adı:", guild.name)
-.addField("Sunucu sahibi", guild.owner)
-.addField("Sunucu Sahibi'nin İd'si", guild.ownerID)
-.addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
-.addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
-
-   client.channels.cache.get('857903634071027752').send(rrrsembed);
-  
-});
-
-client.on('guildCreate', guild => {
-
-let rrrsembed = new Strom.MessageEmbed()
-
-.setColor("GREEN")
-.setTitle("Bot Eklendi")
-.addField("Sunucu Adı:", guild.name)
-.addField("Sunucu sahibi", guild.owner)
-.addField("Sunucu Sahibi'nin İd'si", guild.ownerID)
-.addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
-.addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
-
-   client.channels.cache.get('857903634071027752').send(rrrsembed);
-  
-});
-
-//------------------------ Eklendim Atıldım -----------------------//
-//------------------------ Eklendim Atıldım -----------------------//
-//------------------------ Eklendim Atıldım -----------------------//
 
 
 
@@ -771,25 +734,6 @@ client.on("guildMemberAdd", async member => {
 
 
 //---------------------------------KOMUTLAR---------------------------------\\
-client.on('message', async message => {
-     if(!ayarlar.sahip.includes(message.author.id)) return; 
-  if (message.content === '.katıl') { 
-    client.emit('guildMemberAdd', message.member);
-    message.channel.send('Katılış Eventi Tetiklendi.')
-      }
-     if(!ayarlar.sahip.includes(message.author.id)) return; 
-  if (message.content === '.ayrıl') { // 
-    client.emit('guildMemberRemove', message.member);
-   message.channel.send('Çıkış Eventi Tetiklendi.')
-      }
-  
-    if(!ayarlar.sahip.includes(message.author.id)) return; 
-  if (message.content === '.banekle') { // 
-    client.emit('guildBanAdd', message.member);
-   message.channel.send('Ban Eventi Tetiklendi.')
-      }
-  });
-
 client.on("guildMemberAdd", async (member) => {
     let { oldu, hata, prefix, bot } = require("./ayarlar.json")
     let log = await db.fetch(`logkayıt.${member.guild.id}`)
@@ -1486,15 +1430,15 @@ client.on("guildMemberAdd", async member => {
 //// çekiliş
 const { GiveawaysManager } = require('discord-giveaways');
 client.giveawaysManager = new GiveawaysManager(client, {
-    storage: "./db.json",
-    updateCountdownEvery: 3000,
+    storage: "./giveaways.json",
+    updateCountdownEvery: 5000,
     default: {
         botsCanWin: false,
+        exemptPermissions: [ "MANAGE_MESSAGES", "ADMINISTRATOR" ],
         embedColor: "#FF0000",
         reaction: "🎉"
-    }
+    }//#FF0000
 });
-
 //// çekiliş son//Güvenlik Baş
 
 client.on("guildMemberAdd", member => {
@@ -1614,3 +1558,4 @@ db.delete(`time.${message.guild.id}.${message.author.id}`);
 
 
 });
+

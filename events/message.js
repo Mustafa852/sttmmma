@@ -12,6 +12,7 @@ let client = message.client;
 	setTimeout(() => {
     talkedRecently.delete(message.author.id);
   }, 0);
+  
   if (message.author.bot) return;
   if (!message.content.startsWith(ayarlar.prefix)) return;
   let command = message.content.split(' ')[0].slice(ayarlar.prefix.length);
@@ -49,10 +50,7 @@ let client = message.client;
   return message.reply(`***${client.user.username}*** şu anda bakımda.\nYaklaşık ***${RESULT} önce*** bakıma alınmış.\nBakıma alan: ***${chimped.author.tag}***`);
   };
   };
-
-  if(message.author.id !== '846736343593779230') { 
-  if(db.fetch(message.author.id)) return message.reply('Sen botun karalistesindesin. Komutları kullanamazsın.');
-  };
+if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın. https://discord.gg/fr43SS2n64")
     cmd.run(client, message, params, perms);
   }  
 };
