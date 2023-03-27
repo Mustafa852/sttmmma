@@ -16,6 +16,21 @@ let motivasyonlar = [
 "Başarı, düşmeyi göze alabilecek kadar yüksek atlamaktır.",
 "Hayatta başarılı olmak, beklentilerinizi aşmanızı ve hedeflerinizi gerçekleştirmenizi sağlar.",
 "Başarı, umutsuzluğa karşı direnmek ve devam etmektir.",
+"Dünya senin ayakların altında olabilir, yeter ki ona ulaşmak için yürümeye devam et.",
+"Başarının sırrı, hiçbir zaman pes etmemektir.",
+"Başarı, sadece ne istediğinizi bilmek ve onun için savaşmaktır.",
+"Başarılı insanlar, zorlukları bir fırsat olarak görürler.",
+"Hayatta başarılı olmak için, ne yaptığınızı bilmeli ve buna sadık kalmalısınız.",
+"Başarısızlıklar, yeniden deneyebileceğiniz birer fırsattır.",
+"Hayallerinizi gerçekleştirmek için, her gün bir adım atın.",
+"Başarı, fark yaratmak istemenizle başlar.",
+"Kendine inan, cesaretin olsun, başarının sana geleceğine inan.",
+"Başarı, risk almaktan korkmamakla ilgilidir.",
+"Hayatta başarılı olmak için, önce kendinize inanın.",
+"Başarı, ne kadar çok çalıştığınızla ilgilidir.",
+"Başarı, zorluklar karşısında pes etmemekle ilgilidir.",
+"Her başarı, bir önceki başarının üzerine inşa edilir.",
+"Hayatta başarılı olmak için, sabırlı ve azimli olun.",
 ];
 
 let motivasyon = motivasyonlar[Math.floor(Math.random() * motivasyonlar.length)];
